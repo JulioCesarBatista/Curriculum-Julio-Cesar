@@ -1,0 +1,1053 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* RESET */
+*{
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	box-sizing: border-box;
+}
+
+nav, ul {
+list-style: none;
+}
+
+a{
+text-decoration: none;
+cursor: pointer;	
+}
+
+a:hover{
+	opacity: 1;	
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Finalização do RESET */
+
+
+
+
+/* HEADER*/
+header{
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px 50px;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	font-weight: bold;
+	z-index: 3;
+}
+
+header img {
+	width: 35px;	
+	height: 30px;
+	
+}
+
+header nav {
+	display: flex;	
+}
+
+header li a {
+	color: #C3C63B;
+}
+
+header li {
+	margin: 0 15px;
+}
+
+header li:first-child {
+	margin-left: 0;
+}
+
+header li:last-child {
+	margin-right: 0; 
+}
+
+@media (max-width: 900px) {
+	header {
+		flex-direction: column;
+		background-image: url(../img/fundo_cel2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+	
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	header li {
+	font-weight: bold;
+	margin: 5px;
+	margin-left: 50px;
+	border-bottom: 1px solid #000;
+	}
+	
+	header img {
+	margin-bottom: 15px;
+	margin-left: 45px;
+	}
+	
+	header li:first-child{
+	margin-left: 50px;
+	}
+	
+	header li a {
+	color: #000;
+}
+	
+	
+}
+/* FinalIzação do HEADER */
+
+
+
+/* JULIO CESAR */
+
+.julio_cesar{
+	background-image: url(../img/fundo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 100vh; /* 100vh é equivalente a 100% (UNIDADE RELATIVA)*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+}
+
+.julio_cesar img{
+	width: 500px;
+}
+
+
+.julio_cesar h1{
+	margin-left: 35px;
+	margin-bottom: 40px;
+	font-size: 1.2rem;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	
+}
+
+.julio_cesar a i{
+	color: #000;
+	font-size: 50px;
+	margin-left: 25px;
+}
+
+
+@media (max-width: 900px) {
+	.julio_cesar{
+	display: none;
+	}
+	
+	.julio_cesar .logo2 {
+		display: none;
+	}
+
+	.julio_cesar h1 {
+		display: none;
+	}
+
+	.julio_cesar a i {
+		display: none;
+	}
+}
+
+/* FinalIzação do JULIO CESAR  */
+
+
+
+
+
+/*  QUEM EU SOU  */
+
+#quem_eu_sou{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 5px;
+	min-height: 100vh;
+	margin-top: 40px;
+}
+
+
+.foto4{
+	border-radius: 400px;
+	width: 425px;
+	height: 425px;
+}
+
+.texto{
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	display: flex;
+	flex-direction: column;
+	padding-left: 25px;
+}
+
+#quem_eu_sou .texto h2{
+	font-size: 3.2rem;
+	display: flex;
+	padding-bottom: 5px; 
+	margin-left: 20px;	
+	margin-top: -50px;
+}
+
+#quem_eu_sou .texto hr{
+	width: 280px;
+	height: 2px;
+	background-color: #C3C63B;
+	/* color:#191c03; */
+	margin-bottom: 45px;
+	border: none;
+	margin-left: 25px;
+}
+
+#quem_eu_sou .texto p{
+	line-height: 22px;
+	margin-left: 20px;
+	text-align: justify;
+	width: 510px;
+}
+
+
+@media (max-width: 900px) {
+	
+	
+	#quem_eu_sou{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content:  center;
+		padding-top: 270px;
+		padding-left: 15px;
+	}
+	
+	.texto{
+		font-family: 'Alegreya Sans SC', sans-serif; 
+		display: flex;
+		flex-direction: column;
+		padding-left: 1px;
+		margin-left: -30px;
+
+	}	
+	
+	
+	.foto4{
+		width: 220px;
+		height: 220px;
+		margin-left: 15px;
+	}
+	
+	#quem_eu_sou .texto h2 {
+		font-size: 1.6rem;
+		padding-top: 75px;
+		justify-content: center;
+		margin-left: 45px;
+	
+	}
+	
+	#quem_eu_sou .texto p{
+		line-height: 22px;
+		text-align: justify;
+		width: 200px;
+		font-size: 0.9rem;
+		margin-left: 35px;
+	}
+	
+	#quem_eu_sou .texto hr{
+		width: 80px;
+		height: 2px;
+		border: none;
+		margin-left: 100px;
+	}
+	
+	
+
+	
+}
+
+/* FinalIzação do QUEM EU SOU  */
+
+
+
+
+
+/* EXPERÊNCIA PROFISSIONAL */
+
+.exp_profissional {
+	background-color: #C3C63B;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 5px;
+	margin-top: 110px;
+	padding-top: 130px;
+}
+
+.exp_profissional .texto2{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #000;
+	margin-left: 30px;
+	padding-right: 65px;
+	margin-top: -170px;
+}
+
+.exp_profissional .texto2 h2{
+	font-size: 2.7rem;
+	display: flex;
+	padding-bottom: 5px; 
+	margin-top: 120px;
+	margin-left: 50px;	
+}
+
+
+
+.exp_profissional .texto2 .hr_1{
+	width: 530px;
+	height: 2px;
+	background-color: #000;
+	/* color:#191c03; */
+	margin-bottom: 45px;
+	border: none;
+	margin-left: 35px;
+}
+
+.exp_profissional .texto2 .hr_2{
+	width: 10px;
+	height: 2px;
+	background-color: #000;
+	/* color:#191c03; */
+	border: none;
+	margin-left: 50%;
+}
+
+.exp_profissional .texto2 p{
+	width: 590px;
+	background-color: #C3C63B;
+	line-height: 22px;
+	text-align: justify;
+	font-size: 0.9rem;
+
+	
+}
+
+.exp_profissional img{
+	box-shadow: 5px -9px 3px #000;
+	margin-top: -30px;
+	margin-top: 40px;
+	width: 380px;
+}
+
+@media (max-width: 900px) {
+	
+	.exp_profissional .foto1{
+		box-shadow: none;
+		margin-top: 30px;
+		width: 230px;
+	}
+	
+	.exp_profissional {
+		width: 100%;
+		flex-direction: column-reverse;
+		margin-top: 110px;
+		padding-top: 130px;
+	}
+	
+	.exp_profissional .texto2{
+		width: 200px;
+		margin-top: -30px;
+		padding-right: 0px;
+	}
+	
+	.exp_profissional .texto2 h2{
+		font-size: 1.8rem;
+		display: flex;
+		padding-bottom: 5px; 
+		text-align: center;
+		margin-top: 120px;
+		margin-left: -17px;	
+	}
+	.exp_profissional .texto2 p{
+		width: 200px;
+		background-color: #C3C63B;
+		line-height: 22px;
+		text-align: justify;
+		font-size: 0.9rem;
+		margin-left: -10px;
+	}
+	
+	.exp_profissional .texto2 .hr_1{
+		width: 200px;
+		height: 2px;
+		background-color: #000;
+		/* color:#191c03; */
+		margin-bottom: 45px;
+		border: none;
+		margin-left: -10px;
+		
+	}
+
+	.exp_profissional .texto2 .hr_2{
+		width: 10px;
+		height: 2px;
+		background-color: #000;
+		/* color:#191c03; */
+		border: none;
+		margin-left: 80px;
+		
+	}
+	
+}
+
+/* FinalIzação de EXPERÊNCIA PROFISSIONAL  */
+
+
+
+
+
+/* PROJETOS */
+#projetos .titulo_projeto h2{
+	font-size: 2.7rem;
+	display: flex;
+	margin-top: 200px;
+	justify-content: center;
+		
+}
+
+#projetos .titulo_projeto hr{
+	width: 280px;
+	height: 2px;
+	background-color: #C3C63B;
+	/* color:#191c03; */
+	margin-bottom: 45px;
+	border: none;
+	margin-left: 530px;
+}
+
+
+#projetos{
+	display: flex;
+	width: 100%;
+	padding: 40px 5px;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	justify-content: center;
+	align-items: center;
+}
+
+#projetos  h2{
+	font-size: 2.7rem;
+	margin-left: 30px;
+	margin-top: -200px;
+}
+
+#projetos hr{
+	width: 280px;
+	height: 2px;
+	background-color: #C3C63B;
+	/* color:#191c03; */
+	margin-bottom: 25px;
+	border: none;
+	margin-left: 25px;
+}
+
+#projetos  p{
+	line-height: 22px;
+	margin-left: 20px;
+	text-align: center;
+	width: 510px;
+}
+
+.imagens{
+	display: flex;
+	justify-content: center;
+	margin-top: -460px;
+	width: 100%;
+	align-items: center;
+	min-height: 50vh;
+	flex-direction: column;
+	
+}
+
+
+.imagens img{
+	padding-top: 130px;
+	margin-left: 20px;
+}
+
+
+
+
+@media (max-width: 900px) {
+	
+	#projetos  h2 {
+		font-size: 1.6rem;
+		padding-top: 75px;
+		justify-content: center;
+		margin-left: 45px;
+	
+	}
+	
+	#projetos  p{
+		line-height: 22px;
+		text-align: center;
+		width: 220px;
+		font-size: 0.9rem;
+		margin-left: 35px;
+	}
+	
+	#projetos hr{
+		width: 110px;
+		height: 2px;
+		border: none;
+		margin-left: 45px;
+	}
+	
+	.imagens img{
+		margin-top: -50px;
+		margin-left: 40px;
+	}
+	
+	.imagens {
+		margin-top: -310px;
+	}
+	
+	.imagens .movi{
+		width: 100px;
+	}
+	
+	.imagens .respiration{
+		width: 150px;
+	}
+	
+	.imagens .hotel{
+		width: 150px;
+	}	
+}
+
+
+
+/* FinalIzação de PROJETOS */
+
+
+
+
+/* VIDEO*/
+
+.video{
+	display: flex;
+	min-height: 140vh;
+	flex-direction: column;
+	/*background-color: #191c03;*/
+	background-color: #000;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+
+
+.video hr{
+	width: 280px;
+	height: 2px;
+	font-size: 1.9rem;
+	background-color: #C3C63B;
+	/* color:#191c03; */
+	margin-bottom: 25px;
+	border: none;
+	margin-left: 25px;
+}
+
+.hr_3{
+	margin-top: -20px;	
+	
+	
+}
+
+.video p{
+	color: #fff;
+	line-height: 22px;
+	margin-left: 20px;
+	text-align: center;
+	width: 510px;
+	margin-bottom: 20px;
+	
+}
+
+button {
+	display: flex;
+	background-color: #000;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+	border: 1px solid #fff;
+	margin-top: 30px;
+	padding: 20px 50px;
+}
+
+#link a {
+	color: #c3c63b;
+
+}
+
+
+
+
+
+@media (max-width: 900px) {
+	
+	
+	.video p{
+		line-height: 22px;
+		text-align: center;
+		width: 220px;
+		font-size: 0.9rem;
+		margin-left: 35px;
+	}
+	
+	.video hr{
+		width: 110px;
+		height: 2px;
+		border: none;
+		margin-left: 45px;
+	}
+	
+	.video .hr_3{
+		width: 110px;
+		height: 2px;
+		border: none;
+		margin-left: 45px;
+		margin-top: -100px;	
+	}
+	
+	.wonder{
+		width: 180px;
+		height: 195px;	
+		margin-left: 40px;
+	}
+	
+	.link{
+		margin-left: 40px;
+		
+	}
+	
+	button {
+		width: 160px;
+		height: 95px;	
+		margin-left: 40px;
+		padding: 10px 10px;	
+	}
+
+	
+	
+
+}
+
+/*FINALIZAÇÃO DE VIDEO*/
+
+
+
+/*INFORMÁTICA*/
+
+
+#informatica{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 20px; 
+	min-height: 100vh;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#informatica h3{
+	font-size: 2.7rem;
+	margin-bottom: 35px;
+	color: #000;
+	text-align: center;
+	justify-content: center;
+	margin-top: -50px;
+}
+
+
+#informatica hr{
+	width: 290px;
+	height: 2px;
+	background-color: #c3c63b;	
+	/* color:#191c03; */
+	margin-bottom: 70px;
+	border: none;
+	margin-top: -30px;
+}
+
+#informatica .grid{
+	width: 100%;
+	display: flex;	
+	justify-content: center;
+}
+
+#informatica .grid li{
+	padding: 0px 30px;
+	text-align: center;
+}
+
+#informatica .grid li h4{
+	font-size: 1.5rem;
+	color: #000;	
+	margin-bottom: 30px;
+}
+#informatica .grid li i {
+	color: #c3c63b;	
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+	
+	
+	#informatica .grid {
+	flex-direction: column;	
+	}
+	
+	#informatica h3{
+		font-size: 1.7rem;
+		margin-bottom: 35px;
+		color: #000;
+		text-align: center;
+		justify-content: center;
+	}
+
+
+	#informatica hr{
+		width: 190px;
+		height: 2px;
+		background-color: #c3c63b;	
+		/* color:#191c03; */
+		margin-bottom: 70px;
+		border: none;
+		margin-top: -30px;
+	}
+	
+	#informatica .grid li h4{
+		font-size: 1.0rem;
+		color: #000;	
+		margin-bottom: 30px;
+	}
+	
+	#informatica .grid li{
+		padding: 20px 30px;
+		text-align: center;
+	}
+	
+}
+
+
+/*FINALIZAÇÃO DE INFORMÁTICA*/
+
+
+
+
+
+
+/* HABILIDADES */ 
+
+#habilidades{
+	background-color: #191c03;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 20px; 
+	font-family: 'Alegreya Sans SC', sans-serif; 
+}
+
+#habilidades h3{
+	font-size: 2.7rem;
+	margin-bottom: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+#habilidadess p{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #fff;
+	text-align: center;
+}
+
+#habilidades hr{
+	width: 270px;
+	height: 2px;
+	background-color: #c3c63b;	
+	/* color:#191c03; */
+	margin-bottom: 70px;
+	border: none;
+}
+
+#habilidades .grid2{
+	width: 70%;
+	display: flex;	
+	flex-wrap: wrap;	
+	justify-content: center;
+}
+
+#habilidades .grid2 li{
+	padding: 100px 60px;
+	text-align: center;
+}
+
+#habilidades .grid2 li img {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+#habilidades .grid2 li h4{
+	font-size: 1.5rem;
+	color: #c3c63b;
+	margin-bottom: 30px;
+}
+
+#habilidades .grid2 li p{
+	color: #fff;	
+}
+
+@media (max-width: 900px) {
+	
+	#habilidades h3{
+		font-size: 1.7rem;
+	}
+
+
+	#habilidades hr{
+		width: 190px;	
+	}
+	
+	
+}
+
+
+/*FINALIZAÇÃO DE HABILDIADES */
+
+
+
+
+/* FORMULARIO */ 
+#contato{
+	background-image: url(../img/fundo_fim.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 130vh; /* 100vh é equivalente a 100% (UNIDADE RELATIVA)*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	font-family: 'Alegreya Sans SC', sans-serif; 
+}
+
+#contato h2{
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin-left: 300px;
+	margin-bottom: 10px;
+	padding-top: 100px;
+}
+
+#contato form{
+	border: 2px solid #c3c63b;
+	padding: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-left: 290px;
+}
+
+#contato form div{
+	padding-top: 10px;
+	align-self: flex-start;
+	font-weight: bold;
+}
+
+
+
+.apagar{
+	margin-top: -60px;
+	margin-left: 200px;	
+}
+
+form button {
+	color: #fff;
+	background-color: #000;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+#contato input {
+	padding: 10px;
+	border: 1px solid #c3c63b;
+	width: 190%;
+	border-radius: 4px;
+	margin-right: 15px;
+	flex: 1;
+}
+
+#contato textarea{
+	vertical-align: top;
+	height: 5em;
+	width: 275%;	
+}
+
+@media (max-width: 1200px) {
+	contato {
+		background-image: url(../img/fundo_form.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		min-height: 100vh; /* 100vh é equivalente a 100% (UNIDADE RELATIVA)*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;	
+		width: 10%;
+	}
+	
+	#contato h2 {
+		font-size: 1.0rem;
+		padding-top: -750px;
+		justify-content: center;
+		text-align: center;
+		margin-left: 5px;
+	}
+	
+	#contato form{
+		border: 2px solid #c3c63b;
+		padding: 50px;
+		padding-bottom: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		flex-direction: column;
+		margin-top: 50px;
+		margin-left: 2px;
+	}
+	
+	#contato form div{
+		padding-top: 10px;
+		align-self: flex-start;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.apagar{
+		justify-content: center;
+		width: 100px;
+		height: 35px;
+		font-size: 1.0rem;
+		margin-left: 15px;
+		margin-top: 20px;
+	}
+
+	form button {
+		color: #fff;
+		background-color: #000;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		width: 100px;
+		height: 35px;
+		font-size: 1.0rem;
+		margin-left: 15px;
+	}
+
+
+
+	#contato input {
+		padding: 10px;
+		border: 1px solid #c3c63b;
+		width: 100%;
+		border-radius: 4px;
+		margin-right: 15px;
+		flex: 1;
+	}
+
+	#contato textarea{
+		vertical-align: top;
+		height: 5em;
+		width: 100%;	
+	}
+
+}
+
+/*FINALIZAÇÃO DE FORMULARIO*/ 
+
+
+
+/* FOOTER*/
+footer{
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	padding: 50px 50px;
+	align-items: center;
+	font-family: 'Alegreya Sans SC', sans-serif; 
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+}
+
+footer ul li {
+	margin-right: 10px;	
+}
+
+footer ul li:last-child {
+	margin-right: 0px;
+}
+
+footer ul li a{
+	color: #c3c63b;
+	font-size: 2rem;
+}
+
+footer p{
+	color: #c3c63b;
+	text-align: center;
+}
+
+/* FINALIZAÇÃO DO FOOTER*/
